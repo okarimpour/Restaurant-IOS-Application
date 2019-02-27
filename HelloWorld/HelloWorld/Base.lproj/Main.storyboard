@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf3-lO-PZM">
+                                <rect key="frame" x="260" y="285" width="80" height="30"/>
+                                <state key="normal" title="Hello World"/>
+                                <connections>
+                                    <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="jDG-iq-bbC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Auto Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGe-2c-Hxu">
+                                <rect key="frame" x="393" y="558" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Auto Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t21-eq-fAL">
+                                <rect key="frame" x="393" y="559" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My First App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHh-ly-cvk">
+                                <rect key="frame" x="184" y="60" width="232.5" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kzi-oK-Rks">
+                                <rect key="frame" x="345" y="513" width="187" height="50"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wf3-lO-PZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aqc-9u-Em9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TGe-2c-Hxu" secondAttribute="trailing" id="L80-zh-AMh"/>
+                            <constraint firstItem="AHh-ly-cvk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="SgN-S9-gYt"/>
+                            <constraint firstItem="TGe-2c-Hxu" firstAttribute="baseline" secondItem="t21-eq-fAL" secondAttribute="baseline" constant="-1" id="UEu-zI-rFB"/>
+                            <constraint firstItem="TGe-2c-Hxu" firstAttribute="leading" secondItem="t21-eq-fAL" secondAttribute="leading" id="VBe-u6-noW"/>
+                            <constraint firstItem="wf3-lO-PZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="foL-qf-w71"/>
+                            <constraint firstItem="wf3-lO-PZM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jgM-KH-NiF"/>
+                            <constraint firstItem="wf3-lO-PZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-172" id="lJz-G7-GMm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t21-eq-fAL" secondAttribute="bottom" constant="20" id="lei-T5-ssj"/>
+                            <constraint firstItem="wf3-lO-PZM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="129" id="mRT-pQ-4ex"/>
+                            <constraint firstItem="AHh-ly-cvk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oQk-7t-X3c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kzi-oK-Rks" secondAttribute="trailing" constant="48" id="yVV-Zb-b1b"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Kzi-oK-Rks"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="foL-qf-w71"/>
+                                <exclude reference="lJz-G7-GMm"/>
+                                <exclude reference="mRT-pQ-4ex"/>
+                                <exclude reference="yVV-Zb-b1b"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="290"/>
+        </scene>
+    </scenes>
+</document>
